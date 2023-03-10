@@ -1,6 +1,5 @@
-import { screen } from '@testing-library/react'
 import Header from './Header'
-import { renderWithRouter } from '../../utils/test'
+import { renderWithRouter } from '../../utils/renderWithRouter'
 
 describe('Header', () => {
   it('should render correctly', () => {
@@ -15,11 +14,11 @@ describe('Header', () => {
   })
 
   it('should render correctly the nav links', () => {
-    const { container } = renderWithRouter(<Header />)
+    const { container, getByText } = renderWithRouter(<Header />)
 
-    const logo = screen.getByText('LOGO')
-    const discovery = screen.getByText('Discovery')
-    const username = screen.getByText('Username')
+    const logo = getByText('LOGO')
+    const discovery = getByText('Discovery')
+    const username = getByText('Username')
 
     expect(logo).toBeInTheDocument()
     expect(logo.closest('a')).toHaveAttribute('href', '/')
@@ -34,9 +33,9 @@ describe('Header', () => {
   })
 
   it('should render correctly the logout button', () => {
-    const { container } = renderWithRouter(<Header />)
+    const { container, getByText } = renderWithRouter(<Header />)
 
-    const logout = screen.getByText('Logout')
+    const logout = getByText('Logout')
 
     // todo: test the click event when auth is implemented
     expect(logout).toBeInTheDocument()
