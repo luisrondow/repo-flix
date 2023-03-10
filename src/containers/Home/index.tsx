@@ -17,7 +17,11 @@ const Home = () => {
     <div className="h-screen w-screen bg-base-light">
       <Header />
       <div className="py-20 px-16">
-        <RepositoryCard repository={mockRepository} onRepositoryClick={handleRepositoryClick} />
+        <RepositoryCard
+          type="bookmark"
+          repository={mockRepository}
+          onRepositoryClick={handleRepositoryClick}
+        />
       </div>
     </div>
   )

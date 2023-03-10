@@ -1,15 +1,17 @@
 import { act, render, waitFor, fireEvent } from '@testing-library/react'
 
 import RepositoryCard from './RepositoryCard'
+import { RepositoryCardProps } from './RepositoryCard.types'
 
 describe('RepositoryCard', () => {
-  const props = {
+  const props: RepositoryCardProps = {
     repository: {
       id: 'id',
       name: 'mock',
       image: 'image://mock',
       url: 'url://mock',
     },
+    type: 'list',
     isBookmarked: false,
     onRepositoryClick: jest.fn(),
   }
@@ -18,6 +20,13 @@ describe('RepositoryCard', () => {
     const { container, getByRole } = render(<RepositoryCard {...props} />)
 
     expect(getByRole('img')).toHaveAttribute('src', props.repository.image)
+    expect(container).toMatchSnapshot()
+  })
+
+  it('should render correctly when type is bookmark', () => {
+    const { container, getByTestId } = render(<RepositoryCard {...props} type="bookmark" />)
+
+    expect(getByTestId('bookmark-button')).toBeInTheDocument()
     expect(container).toMatchSnapshot()
   })
 

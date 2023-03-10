@@ -6,7 +6,7 @@ export type Repository = {
 }
 
 export type RepositoryCardProps = {
-  size?: 'small' | 'large'
+  type: 'bookmark' | 'list'
   repository: Repository
   isBookmarked?: boolean
   onRepositoryClick: (url: string) => void
