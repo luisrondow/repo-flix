@@ -1,14 +1,18 @@
 import Header from '../../components/Header/Header'
-import RepositoriesList from './components/RepositoriesList'
+import { useSelectedTechsContext } from '../../hooks/useSelectedTechsContext'
 
-const TECHS = ['Javascript', 'Typescript']
+import RepositoriesList from './components/RepositoriesList'
+import TechsFilter from './components/TechsFilter'
 
 const Home = () => {
+  const { selectedTechs } = useSelectedTechsContext()
+
   return (
     <div className="h-full min-h-screen w-screen bg-base-light">
       <Header />
+      <TechsFilter />
       <div className="py-12">
-        {TECHS.map((techName) => (
+        {selectedTechs?.map((techName) => (
           <RepositoriesList key={techName} title={`Top ${techName}`} techName={techName} />
         ))}
       </div>

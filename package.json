@@ -11,7 +11,8 @@
     "lint:fix": "eslint --fix 'src/**/*.{tsx,json}'",
     "format": "prettier --write 'src/**/*.{tsx,css,md,json}' --config ./.prettierrc",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.26.1",

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1678466798095" clover="3.2.0">
+  <project timestamp="1678466798095" name="All files">
+    <metrics statements="80" coveredstatements="73" conditionals="41" coveredconditionals="33" methods="22" coveredmethods="19" elements="143" coveredelements="125" complexity="0" loc="80" ncloc="80" packages="9" files="12" classes="12"/>
+    <package name="components.ChipsButton">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="ChipsButton.tsx" path="/Users/luisrondow/dev/repo-flix/src/components/ChipsButton/ChipsButton.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Header">
+      <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="Header.tsx" path="/Users/luisrondow/dev/repo-flix/src/components/Header/Header.tsx">
+        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Icons.ArrowIcon">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="ArrowIcon.tsx" path="/Users/luisrondow/dev/repo-flix/src/components/Icons/ArrowIcon/ArrowIcon.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/luisrondow/dev/repo-flix/src/components/Icons/ArrowIcon/index.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Icons.StarIcon">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="StarIcon.tsx" path="/Users/luisrondow/dev/repo-flix/src/components/Icons/StarIcon/StarIcon.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/luisrondow/dev/repo-flix/src/components/Icons/StarIcon/index.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Text">
+      <metrics statements="10" coveredstatements="7" conditionals="7" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/luisrondow/dev/repo-flix/src/components/Text/index.tsx">
+        <metrics statements="10" coveredstatements="7" conditionals="7" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="16" type="stmt"/>
+        <line num="10" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="16" type="cond" truecount="2" falsecount="3"/>
+        <line num="14" count="7" type="stmt"/>
+        <line num="16" count="9" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="containers.Home.components.RepositoriesList">
+      <metrics statements="19" coveredstatements="17" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="4"/>
+      <file name="RepositoriesList.tsx" path="/Users/luisrondow/dev/repo-flix/src/containers/Home/components/RepositoriesList/RepositoriesList.tsx">
+        <metrics statements="19" coveredstatements="17" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="15" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="16" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="31" count="20" type="stmt"/>
+        <line num="33" count="20" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="containers.Home.components.RepositoryCard">
+      <metrics statements="13" coveredstatements="12" conditionals="12" coveredconditionals="10" methods="6" coveredmethods="5"/>
+      <file name="RepositoryCard.tsx" path="/Users/luisrondow/dev/repo-flix/src/containers/Home/components/RepositoryCard/RepositoryCard.tsx">
+        <metrics statements="12" coveredstatements="11" conditionals="12" coveredconditionals="10" methods="5" coveredmethods="4"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="12" count="30" type="stmt"/>
+        <line num="14" count="30" type="stmt"/>
+        <line num="16" count="30" type="stmt"/>
+        <line num="17" count="30" type="stmt"/>
+        <line num="19" count="30" type="stmt"/>
+        <line num="25" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/luisrondow/dev/repo-flix/src/containers/Home/components/RepositoryCard/index.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="21" type="stmt"/>
+      </file>
+    </package>
+    <package name="hooks.useHorizontalScroll">
+      <metrics statements="13" coveredstatements="13" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
+      <file name="index.ts" path="/Users/luisrondow/dev/repo-flix/src/hooks/useHorizontalScroll/index.ts">
+        <metrics statements="13" coveredstatements="13" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="19" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="renderWithRouter.ts" path="/Users/luisrondow/dev/repo-flix/src/utils/renderWithRouter.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
