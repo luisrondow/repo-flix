@@ -22,7 +22,11 @@ const Home = () => {
     <div className="h-screen w-screen bg-base-light">
       <Header />
       <div className="py-12">
-        <RepositoriesList loading={false} repositories={repositories as Repository[]} />
+        <RepositoriesList
+          title="Top Javascript"
+          loading={false}
+          repositories={repositories as Repository[]}
+        />
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import { RepositoryCardProps } from './RepositoryCard.types'
-import StarIcon from '../StarIcon'
+import StarIcon from '../Icons/StarIcon'
 
 const RepositoryCard = (props: RepositoryCardProps) => {
   const {
@@ -19,9 +19,9 @@ const RepositoryCard = (props: RepositoryCardProps) => {
   return (
     <div
       data-testid={`repository-card-${id}`}
-      className={`card relative ${
+      className={`relative ${
         isListCard ? 'h-56 w-112' : 'h-36 w-72'
-      } flex-shrink-0 flex-grow basis-112 cursor-pointer snap-center scroll-mx-96 transition-transform hover:z-10 hover:scale-115 hover:shadow-xl`}
+      } flex-shrink-0 flex-grow basis-112 cursor-pointer snap-center scroll-mx-96 transition-transform hover:z-10 hover:scale-115 hover:shadow-md`}
       onMouseEnter={() => isListCard && setIsCardHovered(true)}
       onMouseLeave={() => isListCard && setIsCardHovered(false)}
     >

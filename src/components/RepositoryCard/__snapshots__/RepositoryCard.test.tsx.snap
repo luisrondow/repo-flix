@@ -3,7 +3,7 @@
 exports[`RepositoryCard should render correctly 1`] = `
 <div>
   <div
-    class="relative h-56 w-112 cursor-pointer transition-transform hover:scale-115"
+    class="relative h-56 w-112 flex-shrink-0 flex-grow basis-112 cursor-pointer snap-center scroll-mx-96 transition-transform hover:z-10 hover:scale-115 hover:shadow-md"
     data-testid="repository-card-id"
   >
     <img
@@ -18,7 +18,7 @@ exports[`RepositoryCard should render correctly 1`] = `
 exports[`RepositoryCard should render correctly the bookmark button 1`] = `
 <div>
   <div
-    class="relative h-56 w-112 cursor-pointer transition-transform hover:scale-115"
+    class="relative h-56 w-112 flex-shrink-0 flex-grow basis-112 cursor-pointer snap-center scroll-mx-96 transition-transform hover:z-10 hover:scale-115 hover:shadow-md"
     data-testid="repository-card-id"
   >
     <img
@@ -31,7 +31,7 @@ exports[`RepositoryCard should render correctly the bookmark button 1`] = `
       data-testid="bookmark-button"
     >
       <svg
-        class="h-10 w-10 fill-none stroke-yellow"
+        class="h-8 w-8 fill-none stroke-yellow"
         fill="none"
         stroke="currentColor"
         stroke-width="1.5"
@@ -52,7 +52,7 @@ exports[`RepositoryCard should render correctly the bookmark button 1`] = `
 exports[`RepositoryCard should render correctly the bookmark button when isBookmarked is true 1`] = `
 <div>
   <div
-    class="relative h-56 w-112 cursor-pointer transition-transform hover:scale-115"
+    class="relative h-56 w-112 flex-shrink-0 flex-grow basis-112 cursor-pointer snap-center scroll-mx-96 transition-transform hover:z-10 hover:scale-115 hover:shadow-md"
     data-testid="repository-card-id"
   >
     <img
@@ -65,7 +65,7 @@ exports[`RepositoryCard should render correctly the bookmark button when isBookm
       data-testid="bookmark-button"
     >
       <svg
-        class="h-10 w-10 fill-yellow stroke-yellow"
+        class="h-8 w-8 fill-yellow stroke-yellow"
         fill="none"
         stroke="currentColor"
         stroke-width="1.5"
@@ -86,7 +86,7 @@ exports[`RepositoryCard should render correctly the bookmark button when isBookm
 exports[`RepositoryCard should render correctly the bookmark button when isBookmarked is true and the user clicks on it 1`] = `
 <div>
   <div
-    class="relative h-56 w-112 cursor-pointer transition-transform hover:scale-115"
+    class="relative h-56 w-112 flex-shrink-0 flex-grow basis-112 cursor-pointer snap-center scroll-mx-96 transition-transform hover:z-10 hover:scale-115 hover:shadow-md"
     data-testid="repository-card-id"
   >
     <img
@@ -99,7 +99,7 @@ exports[`RepositoryCard should render correctly the bookmark button when isBookm
       data-testid="bookmark-button"
     >
       <svg
-        class="h-10 w-10 fill-none stroke-yellow"
+        class="h-8 w-8 fill-none stroke-yellow"
         fill="none"
         stroke="currentColor"
         stroke-width="1.5"
@@ -120,7 +120,7 @@ exports[`RepositoryCard should render correctly the bookmark button when isBookm
 exports[`RepositoryCard should render correctly when type is bookmark 1`] = `
 <div>
   <div
-    class="relative h-36 w-72 cursor-pointer transition-transform hover:scale-115"
+    class="relative h-36 w-72 flex-shrink-0 flex-grow basis-112 cursor-pointer snap-center scroll-mx-96 transition-transform hover:z-10 hover:scale-115 hover:shadow-md"
     data-testid="repository-card-id"
   >
     <img

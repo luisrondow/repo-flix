@@ -22,6 +22,7 @@ module.exports = {
       green: '#9ccfd8',
       blue: '#3e8fb0',
       purple: '#c4a7e7',
+      transparent: 'transparent',
     },
     fontFamily: {
       roboto: ['Roboto', 'sans-serif'],
