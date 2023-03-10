@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly 1`] = `
+<div>
+  <header
+    class="flex h-24 w-full items-center bg-base px-16"
+  >
+    <div
+      class="flex h-full w-6/12 items-center space-x-12"
+    >
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        <h1
+          class=" text-[#e0def4] font-roboto text-4xl font-bold"
+        >
+          LOGO
+        </h1>
+      </a>
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        <h2
+          class="cursor-pointer underline text-[#e0def4] font-roboto text-xl font-bold"
+        >
+          Discovery
+        </h2>
+      </a>
+    </div>
+    <div
+      class="flex h-full w-6/12 items-center justify-end space-x-12"
+    >
+      <a
+        class=""
+        href="/profile"
+      >
+        <h2
+          class="cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+        >
+          Username
+        </h2>
+      </a>
+      <button>
+        <h2
+          class="cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+        >
+          Logout
+        </h2>
+      </button>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`Header should render correctly the logout button 1`] = `
+<div>
+  <header
+    class="flex h-24 w-full items-center bg-base px-16"
+  >
+    <div
+      class="flex h-full w-6/12 items-center space-x-12"
+    >
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        <h1
+          class=" text-[#e0def4] font-roboto text-4xl font-bold"
+        >
+          LOGO
+        </h1>
+      </a>
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        <h2
+          class="cursor-pointer underline text-[#e0def4] font-roboto text-xl font-bold"
+        >
+          Discovery
+        </h2>
+      </a>
+    </div>
+    <div
+      class="flex h-full w-6/12 items-center justify-end space-x-12"
+    >
+      <a
+        class=""
+        href="/profile"
+      >
+        <h2
+          class="cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+        >
+          Username
+        </h2>
+      </a>
+      <button>
+        <h2
+          class="cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+        >
+          Logout
+        </h2>
+      </button>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`Header should render correctly the nav links 1`] = `
+<div>
+  <header
+    class="flex h-24 w-full items-center bg-base px-16"
+  >
+    <div
+      class="flex h-full w-6/12 items-center space-x-12"
+    >
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        <h1
+          class=" text-[#e0def4] font-roboto text-4xl font-bold"
+        >
+          LOGO
+        </h1>
+      </a>
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        <h2
+          class="cursor-pointer underline text-[#e0def4] font-roboto text-xl font-bold"
+        >
+          Discovery
+        </h2>
+      </a>
+    </div>
+    <div
+      class="flex h-full w-6/12 items-center justify-end space-x-12"
+    >
+      <a
+        class=""
+        href="/profile"
+      >
+        <h2
+          class="cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+        >
+          Username
+        </h2>
+      </a>
+      <button>
+        <h2
+          class="cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+        >
+          Logout
+        </h2>
+      </button>
+    </div>
+  </header>
+</div>
+`;

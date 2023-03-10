@@ -1,9 +1,10 @@
 import '@testing-library/jest-dom'
-import { render, screen } from '@testing-library/react'
+import { screen } from '@testing-library/react'
 import App from './App'
+import { renderWithRouter } from './utils/test'
 
 it('renders hello message', () => {
-  render(<App />)
+  renderWithRouter(<App />)
 
-  expect(screen.getByText('Hello world!')).toBeInTheDocument()
+  expect(screen.findByRole('button')).toBeInTheDocument()
 })

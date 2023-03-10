@@ -1,8 +1,8 @@
-import Header from '../../components/Header'
+import Header from '../../components/Header/Header'
 
 const Home = () => {
   return (
-    <div style={{ height: '100vh', width: '100vw' }}>
+    <div className="h-screen w-screen bg-base-light">
       <Header />
     </div>
   )
