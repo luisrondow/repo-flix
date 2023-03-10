@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import { RepositoryCardProps } from './RepositoryCard.types'
-import StarIcon from '../Icons/StarIcon'
+import StarIcon from '../../../../components/Icons/StarIcon'
 
 const RepositoryCard = (props: RepositoryCardProps) => {
   const {

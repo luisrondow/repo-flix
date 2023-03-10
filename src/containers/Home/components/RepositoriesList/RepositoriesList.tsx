@@ -1,7 +1,7 @@
 import Text from '../../../../components/Text'
 import { useRef, useState } from 'react'
 
-import RepositoryCard from '../../../../components/RepositoryCard'
+import RepositoryCard from '../RepositoryCard'
 import { RepositoriesListProps } from './RepositoriesList.types'
 import ArrowIcon from '../../../../components/Icons/ArrowIcon'
 
