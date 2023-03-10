@@ -9,7 +9,6 @@ describe('RepositoryCard', () => {
       id: 'id',
       name: 'mock',
       image: 'image://mock',
-      url: 'url://mock',
     },
     type: 'list',
     isBookmarked: false,
@@ -36,7 +35,7 @@ describe('RepositoryCard', () => {
 
     card.click()
 
-    expect(props.onRepositoryClick).toHaveBeenCalledWith(props.repository.url)
+    expect(props.onRepositoryClick).toHaveBeenCalled()
   })
 
   it('should render correctly the bookmark button', async () => {

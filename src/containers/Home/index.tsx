@@ -1,27 +1,28 @@
 import Header from '../../components/Header/Header'
-import RepositoryCard from '../../components/RepositoryCard'
+import RepositoriesList from './components/RepositoriesList'
+
+import mock from '../../mock.json'
+import { Repository } from '../../utils/repository'
 
 const Home = () => {
-  const handleRepositoryClick = (repositoryUrl: string) => {
-    window.open(repositoryUrl, '_blank')
-  }
+  const repositories = mock.data.map((repository) => {
+    const { id, full_name, html_url } = repository
 
-  const mockRepository = {
-    id: '123',
-    name: 'facebook/react',
-    url: 'https://github.com/facebook/react',
-    image: 'https://opengraph.githubassets.com/123abc/facebook/react',
-  }
+    const image = `https://opengraph.githubassets.com/123abc/${full_name}`
+
+    return {
+      id: id.toString(),
+      name: full_name,
+      url: html_url,
+      image,
+    }
+  })
 
   return (
     <div className="h-screen w-screen bg-base-light">
       <Header />
-      <div className="py-20 px-16">
-        <RepositoryCard
-          type="bookmark"
-          repository={mockRepository}
-          onRepositoryClick={handleRepositoryClick}
-        />
+      <div className="py-12">
+        <RepositoriesList loading={false} repositories={repositories as Repository[]} />
       </div>
     </div>
   )

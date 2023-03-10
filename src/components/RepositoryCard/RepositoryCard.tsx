@@ -5,7 +5,7 @@ import StarIcon from '../StarIcon'
 
 const RepositoryCard = (props: RepositoryCardProps) => {
   const {
-    repository: { id, name, image, url },
+    repository: { id, name, image },
     onRepositoryClick,
     isBookmarked,
     type,
@@ -19,18 +19,13 @@ const RepositoryCard = (props: RepositoryCardProps) => {
   return (
     <div
       data-testid={`repository-card-${id}`}
-      className={`relative ${
+      className={`card relative ${
         isListCard ? 'h-56 w-112' : 'h-36 w-72'
-      } cursor-pointer transition-transform hover:scale-115`}
+      } flex-shrink-0 flex-grow basis-112 cursor-pointer snap-center scroll-mx-96 transition-transform hover:z-10 hover:scale-115 hover:shadow-xl`}
       onMouseEnter={() => isListCard && setIsCardHovered(true)}
       onMouseLeave={() => isListCard && setIsCardHovered(false)}
     >
-      <img
-        src={image}
-        alt={name}
-        className="h-full w-full"
-        onClick={() => onRepositoryClick(url)}
-      />
+      <img src={image} alt={name} className="h-full w-full" onClick={onRepositoryClick} />
       {isCardHovered || !isListCard ? (
         <button
           data-testid="bookmark-button"
@@ -38,7 +33,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
           onClick={() => setIsBookmarkedState((prevState) => !prevState)}
         >
           <StarIcon
-            className={`${isListCard ? 'h-10 w-10' : 'h-6 w-6'}`}
+            className={`${isListCard ? 'h-8 w-8' : 'h-6 w-6'}`}
             isFilled={isBookmarkedState}
           />
         </button>

@@ -1,13 +1,10 @@
-export type Repository = {
-  id: string
-  name: string
-  url: string
-  image: string
-}
-
 export type RepositoryCardProps = {
   type: 'bookmark' | 'list'
-  repository: Repository
+  repository: {
+    id: string
+    name: string
+    image: string
+  }
   isBookmarked?: boolean
-  onRepositoryClick: (url: string) => void
+  onRepositoryClick: () => void
 }

@@ -34,6 +34,9 @@ module.exports = {
       scale: {
         115: '1.15',
       },
+      flexBasis: {
+        112: '28rem',
+      },
     },
   },
   plugins: [],
