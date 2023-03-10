@@ -26,6 +26,15 @@ module.exports = {
     fontFamily: {
       roboto: ['Roboto', 'sans-serif'],
     },
+    extend: {
+      width: {
+        112: '28rem',
+        120: '30rem',
+      },
+      scale: {
+        115: '1.15',
+      },
+    },
   },
   plugins: [],
 }

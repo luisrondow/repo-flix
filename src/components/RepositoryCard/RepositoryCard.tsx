@@ -16,7 +16,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
   return (
     <div
       data-testid={`repository-card-${id}`}
-      className="relative h-48 w-96 cursor-pointer transition-transform hover:scale-125"
+      className="relative h-56 w-112 cursor-pointer transition-transform hover:scale-115"
       onMouseEnter={() => setIsCardHovered(true)}
       onMouseLeave={() => setIsCardHovered(false)}
     >
