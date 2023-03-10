@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import Text from '../Text'
+import Text from '../Text/Text'
 
 const Header = () => {
   const handleLogout = () => {

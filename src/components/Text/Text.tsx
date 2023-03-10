@@ -1,5 +1,5 @@
 type TextProps = {
-  as: 'h1' | 'h2' | 'p' | 'span'
+  as?: 'h1' | 'h2' | 'p' | 'span'
   children: React.ReactNode
   className?: string
 }

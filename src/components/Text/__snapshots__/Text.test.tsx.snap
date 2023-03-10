@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text should render correctly 1`] = `
+<DocumentFragment>
+  <p
+    class=" text-[#e0def4] font-roboto"
+  >
+    Hello World
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Text should render with tag h1 1`] = `
+<DocumentFragment>
+  <h1
+    class=" text-[#e0def4] font-roboto text-4xl font-bold"
+  >
+    Hello World
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Text should render with tag h2 1`] = `
+<DocumentFragment>
+  <h2
+    class=" text-[#e0def4] font-roboto text-xl font-bold"
+  >
+    Hello World
+  </h2>
+</DocumentFragment>
+`;
+
+exports[`Text should render with tag p 1`] = `
+<DocumentFragment>
+  <p
+    class=" text-[#e0def4] font-roboto"
+  >
+    Hello World
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Text should render with tag span 1`] = `
+<DocumentFragment>
+  <span
+    class=" text-[#e0def4] font-roboto"
+  >
+    Hello World
+  </span>
+</DocumentFragment>
+`;
