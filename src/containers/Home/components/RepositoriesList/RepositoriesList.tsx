@@ -1,39 +1,20 @@
 import Text from '../../../../components/Text'
-import { useRef, useState } from 'react'
 
 import RepositoryCard from '../RepositoryCard'
 import { RepositoriesListProps } from './RepositoriesList.types'
 import ArrowIcon from '../../../../components/Icons/ArrowIcon'
+import useRepositories from '../../../../hooks/useRepositories'
+import useHorizontalScroll from '../../../../hooks/useHorizontalScroll'
 
 const RepositoriesList = (props: RepositoriesListProps) => {
-  const { title, repositories, loading } = props
+  const { title, techName } = props
 
-  const listRef = useRef<HTMLDivElement>(null)
-  const [isListLeftScrolled, setIsListLeftScrolled] = useState(false)
+  const { repositories, isLoading, isError, error } = useRepositories(techName, 'stars')
+  const { listRef, isListLeftScrolled, handleScroll } = useHorizontalScroll()
 
-  if (loading) {
-    return <div>Loading...</div>
-  }
-
-  const handleRepositoryClick = (repositoryUrl: string) => {
-    window.open(repositoryUrl, '_blank')
-  }
-
-  const handleScroll = (direction: 'right' | 'left') => {
-    const { current } = listRef
-
-    const scrollOffset = direction === 'right' ? 448 : -448
-
-    if (current) {
-      current.scrollBy({
-        left: scrollOffset,
-        behavior: 'smooth',
-      })
-
-      if (!isListLeftScrolled && current.scrollLeft + scrollOffset > 0) setIsListLeftScrolled(true)
-      else if (isListLeftScrolled && current.scrollLeft + scrollOffset <= 0)
-        setIsListLeftScrolled(false)
-    }
+  if (isLoading) return <div>Loading...</div>
+  if (isError) {
+    return <pre>{JSON.stringify(error)}</pre>
   }
 
   return (
@@ -46,7 +27,7 @@ const RepositoriesList = (props: RepositoriesListProps) => {
         ref={listRef}
         className="no-scrollbar relative flex h-72 w-full snap-mandatory flex-row flex-nowrap items-center space-x-4 overflow-x-auto overflow-y-hidden py-4 pl-16 pr-4"
       >
-        {repositories.map((repository) => {
+        {repositories?.map((repository) => {
           const { id, name, url, image } = repository
 
           return (
@@ -54,7 +35,7 @@ const RepositoriesList = (props: RepositoriesListProps) => {
               key={id}
               type="list"
               repository={{ id, name, image }}
-              onRepositoryClick={() => handleRepositoryClick(url)}
+              onRepositoryClick={() => window.open(url, '_blank')}
             />
           )
         })}

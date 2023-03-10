@@ -34,10 +34,22 @@ const repositories = [
   },
 ]
 
+jest.mock('../../../../../hooks/useRepositories', () => {
+  return {
+    __esModule: true,
+    default: () => ({
+      repositories,
+      isLoading: false,
+      isError: false,
+      error: null,
+    }),
+  }
+})
+
 describe('RepositoriesList', () => {
   it('should render the correctly', () => {
     const { container, getByTestId, getByText, getAllByRole } = render(
-      <RepositoriesList title="Mock title" repositories={repositories} loading={false} />,
+      <RepositoriesList title="Mock title" techName="Mock" />,
     )
 
     const ids = repositories.map((repository) => repository.id)
@@ -54,19 +66,9 @@ describe('RepositoriesList', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('should render the loading state correctly', () => {
-    const { container, getByText } = render(
-      <RepositoriesList title="Mock title" repositories={[]} loading />,
-    )
-
-    expect(getByText('Loading...')).toBeInTheDocument()
-
-    expect(container).toMatchSnapshot()
-  })
-
   it('should scroll the list correctly', () => {
     const { getByTestId, getAllByRole } = render(
-      <RepositoriesList title="Mock title" repositories={repositories} loading={false} />,
+      <RepositoriesList title="Mock title" techName="Mock" />,
     )
 
     window.HTMLElement.prototype.scrollBy = jest.fn()

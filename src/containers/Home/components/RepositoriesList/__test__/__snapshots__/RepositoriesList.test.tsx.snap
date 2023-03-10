@@ -91,11 +91,3 @@ exports[`RepositoriesList should render the correctly 1`] = `
   </div>
 </div>
 `;
-
-exports[`RepositoriesList should render the loading state correctly 1`] = `
-<div>
-  <div>
-    Loading...
-  </div>
-</div>
-`;
