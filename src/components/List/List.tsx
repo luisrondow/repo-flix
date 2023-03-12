@@ -3,6 +3,8 @@ import Text from '../Text'
 import ArrowIcon from '../Icons/ArrowIcon'
 import useHorizontalScroll from '../../hooks/useHorizontalScroll'
 import { ListProps } from './List.types'
+import ListSortMenu from '../ListSortMenu'
+import { useState } from 'react'
 
 const LIST_HEIGHT = {
   listContainer: {
@@ -16,15 +18,28 @@ const LIST_HEIGHT = {
 }
 
 const List = (props: ListProps) => {
-  const { size, title, children } = props
+  const { size, title, showMenu, children, onMenuClick } = props
 
   const { listRef, isListLeftScrolled, handleScroll } = useHorizontalScroll()
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
   return (
     <div data-testid="repositories-list-container" className="relative mt-8">
-      <Text as="h1" className="pl-16">
-        {title}
-      </Text>
+      <div className="flex flex-row">
+        <Text as="h1" className="mr-4 pl-16">
+          {title}
+        </Text>
+        <div className="relative">
+          {showMenu ? (
+            <button onClick={() => setIsMenuOpen((prevState) => !prevState)}>
+              <ArrowIcon direction="down" />
+            </button>
+          ) : null}
+          {isMenuOpen ? <ListSortMenu onSortOptionClick={onMenuClick} /> : null}
+        </div>
+      </div>
+
       <div
         data-testid="repositories-list"
         ref={listRef}
