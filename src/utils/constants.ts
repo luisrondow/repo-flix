@@ -9,3 +9,4 @@ export const SORT_OPTIONS = [
 
 export const BOOKMARKS_KEY = 'repoflix:bookmarks' as const
 export const SELECTED_TECHS_KEY = 'repoflix:selected-techs' as const
+export const SORTED_OPTIONS_KEY = 'repoflix:sorted-options' as const

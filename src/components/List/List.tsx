@@ -5,6 +5,7 @@ import useHorizontalScroll from '../../hooks/useHorizontalScroll'
 import { ListProps } from './List.types'
 import ListSortMenu from '../ListSortMenu'
 import { useState } from 'react'
+import { SORT_OPTIONS } from '../../utils/constants'
 
 const LIST_HEIGHT = {
   listContainer: {
@@ -18,17 +19,23 @@ const LIST_HEIGHT = {
 }
 
 const List = (props: ListProps) => {
-  const { size, title, showMenu, children, onMenuClick } = props
+  const { size, title, showMenu, children, onMenuClick, sortOption } = props
 
   const { listRef, isListLeftScrolled, handleScroll } = useHorizontalScroll()
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const handleOnSortOptionClick = (value: (typeof SORT_OPTIONS)[number]['value']) => {
+    onMenuClick && onMenuClick(value)
+    setIsMenuOpen(false)
+  }
 
   return (
     <div data-testid="repositories-list-container" className="relative mt-8">
       <div className="flex flex-row">
         <Text as="h1" className="mr-4 pl-16">
           {title}
+          {sortOption ? ` - sorted by ${sortOption}` : ''}
         </Text>
         <div className="relative">
           {showMenu ? (
@@ -36,7 +43,12 @@ const List = (props: ListProps) => {
               <ArrowIcon direction="down" />
             </button>
           ) : null}
-          {isMenuOpen ? <ListSortMenu onSortOptionClick={onMenuClick} /> : null}
+          {isMenuOpen ? (
+            <ListSortMenu
+              activeSortOption={sortOption ?? ''}
+              onSortOptionClick={handleOnSortOptionClick}
+            />
+          ) : null}
         </div>
       </div>
 

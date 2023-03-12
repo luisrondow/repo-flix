@@ -1,12 +1,17 @@
 import Header from '../../components/Header/Header'
 import { useSelectedTechsContext } from '../../hooks/useSelectedTechsContext'
+import { TECHS } from '../../utils/constants'
 import BookmarksList from './components/BookmarksList/BookmarksList'
 
 import RepositoriesList from './components/RepositoriesList'
 import TechsFilter from './components/TechsFilter'
 
+type SelectedTechs = {
+  selectedTechs: Array<(typeof TECHS)[number]>
+}
+
 const Home = () => {
-  const { selectedTechs } = useSelectedTechsContext()
+  const { selectedTechs } = useSelectedTechsContext() as SelectedTechs
 
   return (
     <div className="h-full min-h-screen w-screen bg-base-light">
