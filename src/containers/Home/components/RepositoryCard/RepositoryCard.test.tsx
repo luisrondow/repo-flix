@@ -3,15 +3,28 @@ import { act, render, waitFor, fireEvent } from '@testing-library/react'
 import RepositoryCard from './RepositoryCard'
 import { RepositoryCardProps } from './RepositoryCard.types'
 
+// jest.mock('../../../../hooks/useBookmarksContext', () => {
+//   return {
+//     __esModule: true,
+//     default: () => ({
+//       bookmarks: [],
+//       actions: {
+//         addBookmark: jest.fn(),
+//         removeBookmark: jest.fn(),
+//       },
+//     }),
+//   }
+// })
+
 describe('RepositoryCard', () => {
   const props: RepositoryCardProps = {
     repository: {
       id: 'id',
       name: 'mock',
       image: 'image://mock',
+      url: 'url://mock',
     },
     type: 'list',
-    isBookmarked: false,
     onRepositoryClick: jest.fn(),
   }
 
@@ -52,20 +65,8 @@ describe('RepositoryCard', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('should render correctly the bookmark button when isBookmarked is true', async () => {
-    const { container, getByTestId } = render(<RepositoryCard {...props} isBookmarked />)
-
-    fireEvent.mouseEnter(getByTestId(`repository-card-${props.repository.id}`))
-
-    await waitFor(() => getByTestId('bookmark-button'))
-
-    expect(getByTestId('bookmark-button').childNodes.item(0)).toHaveClass('fill-yellow')
-
-    expect(container).toMatchSnapshot()
-  })
-
-  it('should render correctly the bookmark button when isBookmarked is true and the user clicks on it', async () => {
-    const { container, getByTestId } = render(<RepositoryCard {...props} isBookmarked />)
+  it('should fire correctly the bookmark button click', async () => {
+    const { container, getByTestId } = render(<RepositoryCard {...props} />)
 
     fireEvent.mouseEnter(getByTestId(`repository-card-${props.repository.id}`))
 
@@ -73,12 +74,12 @@ describe('RepositoryCard', () => {
 
     const bookmark = getByTestId('bookmark-button')
 
-    expect(bookmark.childNodes.item(0)).toHaveClass('fill-yellow')
+    expect(bookmark.childNodes.item(0)).not.toHaveClass('fill-yellow')
 
-    act(() => bookmark.click())
+    act(() => fireEvent.click(bookmark))
 
     await waitFor(() => {
-      expect(bookmark.childNodes.item(0)).not.toHaveClass('fill-yellow')
+      expect(bookmark.childNodes.item(0)).toHaveClass('fill-yellow')
     })
 
     expect(container).toMatchSnapshot()

@@ -7,6 +7,10 @@ type GitHubRepo = {
 export default async function client(endpoint: string, customConfig = {}): Promise<GitHubRepo[]> {
   const config = {
     method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
+    },
     ...customConfig,
   }
 

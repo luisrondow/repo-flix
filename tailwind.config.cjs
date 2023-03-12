@@ -41,6 +41,10 @@ module.exports = {
       flexBasis: {
         112: '28rem',
       },
+      maxWidth: {
+        72: '18rem',
+        112: '28rem',
+      }
     },
   },
   plugins: [],

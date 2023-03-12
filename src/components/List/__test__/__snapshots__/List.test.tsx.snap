@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List should render the correctly 1`] = `
+<div>
+  <div
+    class="relative mt-8"
+    data-testid="repositories-list-container"
+  >
+    <h1
+      class="pl-16 text-[#e0def4] font-roboto text-4xl font-bold"
+    >
+      Mock title
+    </h1>
+    <div
+      class="h-56 no-scrollbar relative flex h-56 w-full snap-mandatory flex-row flex-nowrap items-center space-x-4 overflow-x-auto overflow-y-hidden py-4 pl-16 pr-4"
+      data-testid="repositories-list"
+    >
+      <div>
+        Mock children
+      </div>
+      <div>
+        Mock children
+      </div>
+      <div>
+        Mock children
+      </div>
+    </div>
+    <div
+      class="h-48 absolute bottom-0 right-0 z-20 mb-4 flex w-60 items-center justify-end bg-gradient-to-r from-transparent to-base opacity-0 transition-opacity hover:opacity-100"
+    >
+      <button
+        class="h-full pl-8 pr-2"
+      >
+        <svg
+          class="h-12 w-12 stroke-gray-light"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;

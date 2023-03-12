@@ -4,7 +4,7 @@ export type RepositoryCardProps = {
     id: string
     name: string
     image: string
+    url: string
   }
-  isBookmarked?: boolean
   onRepositoryClick: () => void
 }

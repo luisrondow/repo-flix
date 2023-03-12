@@ -15,7 +15,7 @@ const TechsFilter = () => {
   }
 
   return (
-    <div className="mt-8 flex w-full flex-col px-16">
+    <div className="flex w-full flex-col px-16">
       <Text as="h2" className="mb-2">
         Toggle topics to show
       </Text>
