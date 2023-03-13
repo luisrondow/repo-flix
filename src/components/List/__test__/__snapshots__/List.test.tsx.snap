@@ -6,11 +6,18 @@ exports[`List should render the correctly 1`] = `
     class="relative mt-8"
     data-testid="repositories-list-container"
   >
-    <h1
-      class="pl-16 text-[#e0def4] font-roboto text-4xl font-bold"
+    <div
+      class="flex flex-row"
     >
-      Mock title
-    </h1>
+      <h1
+        class="mr-4 pl-16 text-[#e0def4] font-roboto text-4xl font-bold"
+      >
+        Mock title
+      </h1>
+      <div
+        class="relative"
+      />
+    </div>
     <div
       class="h-56 no-scrollbar relative flex h-56 w-full snap-mandatory flex-row flex-nowrap items-center space-x-4 overflow-x-auto overflow-y-hidden py-4 pl-16 pr-4"
       data-testid="repositories-list"
@@ -32,7 +39,7 @@ exports[`List should render the correctly 1`] = `
         class="h-full pl-8 pr-2"
       >
         <svg
-          class="h-12 w-12 stroke-gray-light"
+          class=" h-12 w-12 stroke-gray-light"
           fill="none"
           stroke="currentColor"
           stroke-width="1.5"

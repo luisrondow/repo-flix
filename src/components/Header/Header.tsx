@@ -1,11 +1,14 @@
 import { NavLink } from 'react-router-dom'
 import Text from '../Text/Text'
+import useAuth from '../../hooks/useAuth'
 
-const Header = (props: { currentPage: string }) => {
-  const { currentPage } = props
+const Header = (props: { currentPage: string; username: string }) => {
+  const { currentPage, username } = props
+
+  const { logout } = useAuth()
 
   const handleLogout = () => {
-    alert('Logout')
+    logout()
   }
 
   return (
@@ -23,7 +26,7 @@ const Header = (props: { currentPage: string }) => {
       <div className="flex h-full w-6/12 items-center justify-end space-x-12">
         <NavLink to="/profile">
           <Text as="h2" className={`${currentPage === 'profile' && 'underline'} cursor-pointer`}>
-            Username
+            {username}
           </Text>
         </NavLink>
         <button onClick={handleLogout}>
