@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form should render correctly 1`] = `
+<div>
+  <div
+    class="mt-12"
+  >
+    <form
+      class="flex flex-col"
+    >
+      <div
+        class="mb-8"
+      >
+        <label>
+          <h1
+            class="mb-2 text-base text-white text-[#e0def4] font-roboto text-4xl font-bold"
+          >
+            Email
+          </h1>
+          <input
+            class="h-12 w-full rounded-md bg-base px-4 text-white"
+            name="email"
+            placeholder="Email"
+            type="text"
+            value=""
+          />
+          <p
+            class="mt-2 text-sm font-bold text-red text-[#e0def4] font-roboto"
+          />
+        </label>
+      </div>
+      <div
+        class="mb-8"
+      >
+        <label>
+          <h1
+            class="mb-2 text-base text-white text-[#e0def4] font-roboto text-4xl font-bold"
+          >
+            Password
+          </h1>
+          <input
+            class="h-12 w-full rounded-md bg-base px-4 text-white"
+            name="password"
+            placeholder="Password"
+            type="password"
+            value=""
+          />
+          <p
+            class="mt-2 text-sm font-bold text-red text-[#e0def4] font-roboto"
+          />
+        </label>
+      </div>
+    </form>
+    <button
+      class="mt-8 h-12 rounded-md bg-white font-semibold transition-all duration-200 hover:bg-gray-light w-full"
+      type="submit"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Form should render correctly when isSubmitting is true 1`] = `
+<div>
+  <div
+    class="mt-12"
+  >
+    <form
+      class="flex flex-col"
+    >
+      <div
+        class="mb-8"
+      >
+        <label>
+          <h1
+            class="mb-2 text-base text-white text-[#e0def4] font-roboto text-4xl font-bold"
+          >
+            Email
+          </h1>
+          <input
+            class="h-12 w-full rounded-md bg-base px-4 text-white"
+            name="email"
+            placeholder="Email"
+            type="text"
+            value=""
+          />
+          <p
+            class="mt-2 text-sm font-bold text-red text-[#e0def4] font-roboto"
+          />
+        </label>
+      </div>
+      <div
+        class="mb-8"
+      >
+        <label>
+          <h1
+            class="mb-2 text-base text-white text-[#e0def4] font-roboto text-4xl font-bold"
+          >
+            Password
+          </h1>
+          <input
+            class="h-12 w-full rounded-md bg-base px-4 text-white"
+            name="password"
+            placeholder="Password"
+            type="password"
+            value=""
+          />
+          <p
+            class="mt-2 text-sm font-bold text-red text-[#e0def4] font-roboto"
+          />
+        </label>
+      </div>
+    </form>
+    <button
+      class="mt-8 h-12 rounded-md bg-white font-semibold transition-all duration-200 hover:bg-gray-light w-full"
+      disabled=""
+      type="submit"
+    >
+      Loading...
+    </button>
+  </div>
+</div>
+`;

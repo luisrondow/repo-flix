@@ -1,6 +1,13 @@
 import Header from './Header'
 import { renderWithRouter } from '../../utils/renderWithRouter'
 
+jest.mock('../../hooks/useAuth', () => ({
+  __esModule: true,
+  default: () => ({
+    logout: jest.fn(),
+  }),
+}))
+
 describe('Header', () => {
   const props = {
     currentPage: 'home',
@@ -48,7 +55,6 @@ describe('Header', () => {
 
     const logout = getByText('Logout')
 
-    // todo: test the click event when auth is implemented
     expect(logout).toBeInTheDocument()
     expect(logout.closest('button')).toBeInTheDocument()
 

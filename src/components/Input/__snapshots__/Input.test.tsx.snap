@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should render correctly 1`] = `
+<div>
+  <div>
+    <label>
+      <h1
+        class="mb-2 text-base text-white text-[#e0def4] font-roboto text-4xl font-bold"
+      >
+        Mock label
+      </h1>
+      <input
+        class="h-12 w-full rounded-md bg-base px-4 text-white"
+        placeholder="Mock placeholder"
+        type="text"
+        value=""
+      />
+      <p
+        class="mt-2 text-sm font-bold text-red text-[#e0def4] font-roboto"
+      />
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Input should render correctly when error is not empty 1`] = `
+<div>
+  <div>
+    <label>
+      <h1
+        class="mb-2 text-base text-white text-[#e0def4] font-roboto text-4xl font-bold"
+      >
+        Mock label
+      </h1>
+      <input
+        class="h-12 w-full rounded-md bg-base px-4 text-white"
+        placeholder="Mock placeholder"
+        type="text"
+        value=""
+      />
+      <p
+        class="mt-2 text-sm font-bold text-red text-[#e0def4] font-roboto"
+      >
+        Mock error
+      </p>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Input should render correctly when type is password 1`] = `
+<div>
+  <div>
+    <label>
+      <h1
+        class="mb-2 text-base text-white text-[#e0def4] font-roboto text-4xl font-bold"
+      >
+        Mock label
+      </h1>
+      <input
+        class="h-12 w-full rounded-md bg-base px-4 text-white"
+        placeholder="Mock placeholder"
+        type="password"
+        value=""
+      />
+      <p
+        class="mt-2 text-sm font-bold text-red text-[#e0def4] font-roboto"
+      />
+    </label>
+  </div>
+</div>
+`;

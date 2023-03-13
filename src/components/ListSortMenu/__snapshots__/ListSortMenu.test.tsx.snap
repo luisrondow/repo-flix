@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListSortMenu should render correctly 1`] = `
+<div>
+  <div
+    class="absolute z-30 w-64"
+  >
+    <li
+      class="list-none bg-white"
+    >
+      <ul
+        class="underline cursor-pointer px-2 py-1 font-semibold hover:bg-gray-light"
+      >
+        Sort by 
+        stars
+      </ul>
+      <ul
+        class="false cursor-pointer px-2 py-1 font-semibold hover:bg-gray-light"
+      >
+        Sort by 
+        forks
+      </ul>
+      <ul
+        class="false cursor-pointer px-2 py-1 font-semibold hover:bg-gray-light"
+      >
+        Sort by 
+        updated
+      </ul>
+      <ul
+        class="false cursor-pointer px-2 py-1 font-semibold hover:bg-gray-light"
+      >
+        Sort by 
+        help wanted issues
+      </ul>
+    </li>
+  </div>
+</div>
+`;

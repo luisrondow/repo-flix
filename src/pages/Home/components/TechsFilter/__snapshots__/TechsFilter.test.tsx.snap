@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TechsFilter should render correctly 1`] = `
+<div>
+  <div
+    class="flex w-full flex-col flex-wrap px-16"
+  >
+    <h2
+      class="mb-2 text-[#e0def4] font-roboto text-xl font-bold"
+    >
+      Toggle topics to show
+    </h2>
+    <div
+      class="flex w-full flex-row space-x-4"
+    >
+      <div
+        class="bg-white flex cursor-pointer items-center justify-center rounded-full border  border-black py-3 px-8 font-medium text-black"
+        data-testid="chips-button"
+      >
+        <div
+          class="max-w-full flex-initial text-lg  font-bold leading-none"
+        >
+          Typescript
+        </div>
+      </div>
+      <div
+        class="bg-white flex cursor-pointer items-center justify-center rounded-full border  border-black py-3 px-8 font-medium text-black"
+        data-testid="chips-button"
+      >
+        <div
+          class="max-w-full flex-initial text-lg  font-bold leading-none"
+        >
+          Javascript
+        </div>
+      </div>
+      <div
+        class="bg-white flex cursor-pointer items-center justify-center rounded-full border  border-black py-3 px-8 font-medium text-black"
+        data-testid="chips-button"
+      >
+        <div
+          class="max-w-full flex-initial text-lg  font-bold leading-none"
+        >
+          Vue
+        </div>
+      </div>
+      <div
+        class="bg-white flex cursor-pointer items-center justify-center rounded-full border  border-black py-3 px-8 font-medium text-black"
+        data-testid="chips-button"
+      >
+        <div
+          class="max-w-full flex-initial text-lg  font-bold leading-none"
+        >
+          Go
+        </div>
+      </div>
+      <div
+        class="bg-white flex cursor-pointer items-center justify-center rounded-full border  border-black py-3 px-8 font-medium text-black"
+        data-testid="chips-button"
+      >
+        <div
+          class="max-w-full flex-initial text-lg  font-bold leading-none"
+        >
+          CSS
+        </div>
+      </div>
+      <div
+        class="bg-white flex cursor-pointer items-center justify-center rounded-full border  border-black py-3 px-8 font-medium text-black"
+        data-testid="chips-button"
+      >
+        <div
+          class="max-w-full flex-initial text-lg  font-bold leading-none"
+        >
+          Node
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
