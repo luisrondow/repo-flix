@@ -11,6 +11,8 @@ const RepositoryCard = (props: RepositoryCardProps) => {
 
   const isListCard = type === 'list'
 
+  const isMobile = window.innerWidth < 1280
+
   const { actions } = useBookmarksContext()
 
   const [isBookmarkedState, setIsBookmarkedState] = useState(
@@ -34,13 +36,15 @@ const RepositoryCard = (props: RepositoryCardProps) => {
     <div
       data-testid={`repository-card-${id}`}
       className={`relative ${
-        isListCard ? 'h-56 w-112 basis-112' : 'h-36 w-72 max-w-72 basis-72'
-      } flex-shrink-0 flex-grow cursor-pointer snap-center scroll-mx-96 transition-transform hover:z-10 hover:scale-115 hover:shadow-md`}
+        isListCard
+          ? 'h-36 w-72 basis-72 sm:h-56 sm:w-112 sm:basis-112'
+          : 'h-28 w-56 max-w-56 basis-56 sm:h-36 sm:w-72 sm:max-w-72 sm:basis-72'
+      } flex-shrink-0 flex-grow cursor-pointer snap-center scroll-mx-96 transition-transform sm:hover:z-10 sm:hover:scale-115 sm:hover:shadow-md`}
       onMouseEnter={() => isListCard && setIsCardHovered(true)}
       onMouseLeave={() => isListCard && setIsCardHovered(false)}
     >
       <img src={image} alt={name} className="h-full w-full" onClick={onRepositoryClick} />
-      {isCardHovered || !isListCard ? (
+      {isCardHovered || !isListCard || isMobile ? (
         <button
           data-testid="bookmark-button"
           className="absolute top-1 right-1"

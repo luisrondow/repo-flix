@@ -35,6 +35,7 @@ const SignUp = () => {
       placeholder: 'Password',
       required: true,
       type: 'password',
+      minLength: 6,
     },
   ]
 
@@ -59,7 +60,7 @@ const SignUp = () => {
 
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-base-light">
-      <div className="w-112">
+      <div className="w-88 sm:w-112">
         <Form
           formOptions={formOptions}
           onSubmit={onSubmit}

@@ -10,7 +10,7 @@ exports[`List should render the correctly 1`] = `
       class="flex flex-row"
     >
       <h1
-        class="mr-4 pl-16 text-[#e0def4] font-roboto text-4xl font-bold"
+        class="mr-4 pl-4 sm:pl-16 text-[#e0def4] font-roboto text-2xl font-bold sm:text-4xl"
       >
         Mock title
       </h1>
@@ -19,7 +19,7 @@ exports[`List should render the correctly 1`] = `
       />
     </div>
     <div
-      class="h-56 no-scrollbar relative flex h-56 w-full snap-mandatory flex-row flex-nowrap items-center space-x-4 overflow-x-auto overflow-y-hidden py-4 pl-16 pr-4"
+      class="h-48 sm:h-56 no-scrollbar relative flex w-full snap-mandatory flex-row flex-nowrap items-center space-x-4 overflow-x-auto overflow-y-hidden py-4 pl-4 pr-4 sm:pl-16"
       data-testid="repositories-list"
     >
       <div>
@@ -33,7 +33,7 @@ exports[`List should render the correctly 1`] = `
       </div>
     </div>
     <div
-      class="h-48 absolute bottom-0 right-0 z-20 mb-4 flex w-60 items-center justify-end bg-gradient-to-r from-transparent to-base opacity-0 transition-opacity hover:opacity-100"
+      class="h-48 absolute bottom-0 right-0 z-20 mb-4 hidden w-60 items-center justify-end bg-gradient-to-r from-transparent to-base opacity-0 transition-opacity hover:opacity-100 sm:flex"
     >
       <button
         class="h-full pl-8 pr-2"

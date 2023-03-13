@@ -13,7 +13,7 @@ exports[`Text should render correctly 1`] = `
 exports[`Text should render with tag h1 1`] = `
 <DocumentFragment>
   <h1
-    class=" text-[#e0def4] font-roboto text-4xl font-bold"
+    class=" text-[#e0def4] font-roboto text-2xl font-bold sm:text-4xl"
   >
     Hello World
   </h1>
@@ -23,7 +23,7 @@ exports[`Text should render with tag h1 1`] = `
 exports[`Text should render with tag h2 1`] = `
 <DocumentFragment>
   <h2
-    class=" text-[#e0def4] font-roboto text-xl font-bold"
+    class=" text-[#e0def4] font-roboto font-bold sm:text-xl"
   >
     Hello World
   </h2>

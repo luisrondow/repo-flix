@@ -3,7 +3,7 @@
 exports[`ListSortMenu should render correctly 1`] = `
 <div>
   <div
-    class="absolute z-30 w-64"
+    class="absolute right-0 z-30 mr-2 w-64 sm:left-0"
   >
     <li
       class="list-none bg-white"

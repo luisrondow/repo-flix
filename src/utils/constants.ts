@@ -10,6 +10,7 @@ export const SORT_OPTIONS = [
 export const FORM_ERRORS = [
   { value: 'required', label: 'This field is required' },
   { value: 'pattern', label: 'Invalid format' },
+  { value: 'minlength', label: 'Minimum length is 6' },
 ]
 
 export const BOOKMARKS_KEY = 'repoflix:bookmarks' as const

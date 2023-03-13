@@ -12,18 +12,21 @@ const Header = (props: { currentPage: string; username: string }) => {
   }
 
   return (
-    <header className="flex h-24 w-full items-center bg-base px-16">
-      <div className="flex h-full w-6/12 items-center space-x-12">
+    <header className="flex h-24 w-full items-center bg-base px-4 sm:px-16">
+      <div className="flex h-full w-6/12 items-center sm:space-x-12">
         <NavLink to="/">
           <Text as="h1">LOGO</Text>
         </NavLink>
         <NavLink to="/">
-          <Text as="h2" className={`${currentPage === 'home' && 'underline'} cursor-pointer`}>
+          <Text
+            as="h2"
+            className={`${currentPage === 'home' && 'underline'} ml-4 cursor-pointer sm:ml-0`}
+          >
             Discovery
           </Text>
         </NavLink>
       </div>
-      <div className="flex h-full w-6/12 items-center justify-end space-x-12">
+      <div className="flex h-full w-6/12 items-center justify-end space-x-4 sm:space-x-12">
         <NavLink to="/profile">
           <Text as="h2" className={`${currentPage === 'profile' && 'underline'} cursor-pointer`}>
             {username}

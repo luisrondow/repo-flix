@@ -8,6 +8,7 @@ export interface FormOption<T> {
   required?: boolean
   type?: string
   pattern?: RegExp
+  minLength?: number
 }
 
 export interface FormProps<T> {

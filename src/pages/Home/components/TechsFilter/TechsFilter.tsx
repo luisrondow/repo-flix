@@ -15,11 +15,11 @@ const TechsFilter = () => {
   }
 
   return (
-    <div className="flex w-full flex-col flex-wrap px-16">
+    <div className="flex w-full flex-col px-4 sm:px-16">
       <Text as="h2" className="mb-2">
         Toggle topics to show
       </Text>
-      <div className="flex w-full flex-row space-x-4">
+      <div className="flex w-full flex-row flex-wrap justify-between space-x-2 sm:justify-start sm:space-x-4">
         {TECHS.map((techName) => (
           <ChipsButton
             key={techName}

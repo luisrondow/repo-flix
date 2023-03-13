@@ -63,7 +63,7 @@ const Profile = () => {
   return (
     <div className="h-full min-h-screen w-screen bg-base-light">
       <Header currentPage="profile" username={state.username} />
-      <div className="mt-8 max-w-xl pl-16">
+      <div className="mt-8 max-w-md px-8 sm:max-w-xl sm:pl-16 sm:pr-0">
         <Text as="h1" className="mr-4">
           My Account
         </Text>

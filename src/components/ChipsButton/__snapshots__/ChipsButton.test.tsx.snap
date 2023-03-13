@@ -3,11 +3,11 @@
 exports[`ChipsButton should render selected 1`] = `
 <div>
   <div
-    class="bg-gray-500 flex cursor-pointer items-center justify-center rounded-full border  border-black py-3 px-8 font-medium text-black"
+    class="bg-gray-500 mb-4 flex cursor-pointer items-center justify-center rounded-full border border-black py-3 px-8 font-medium text-black sm:mb-0"
     data-testid="chips-button"
   >
     <div
-      class="max-w-full flex-initial text-lg  font-bold leading-none"
+      class="max-w-full flex-initial text-lg font-bold leading-none"
     >
       Test
     </div>
@@ -18,11 +18,11 @@ exports[`ChipsButton should render selected 1`] = `
 exports[`ChipsButton should render successfully 1`] = `
 <div>
   <div
-    class="bg-white flex cursor-pointer items-center justify-center rounded-full border  border-black py-3 px-8 font-medium text-black"
+    class="bg-white mb-4 flex cursor-pointer items-center justify-center rounded-full border border-black py-3 px-8 font-medium text-black sm:mb-0"
     data-testid="chips-button"
   >
     <div
-      class="max-w-full flex-initial text-lg  font-bold leading-none"
+      class="max-w-full flex-initial text-lg font-bold leading-none"
     >
       Test
     </div>

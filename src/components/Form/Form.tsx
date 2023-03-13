@@ -34,6 +34,7 @@ const Form = <T extends object>(props: FormProps<T>) => {
             {...register(option.key, {
               required: option.required,
               ...(option.pattern && { pattern: option.pattern }),
+              ...(option.minLength && { minLength: option.minLength }),
             })}
           />
         ))}

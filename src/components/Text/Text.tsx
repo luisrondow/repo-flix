@@ -11,9 +11,9 @@ const Text = (props: TextProps) => {
 
   switch (as) {
     case 'h1':
-      return <h1 className={`${className} text-4xl font-bold`}>{children}</h1>
+      return <h1 className={`${className} text-2xl font-bold sm:text-4xl`}>{children}</h1>
     case 'h2':
-      return <h2 className={`${className} text-xl font-bold`}>{children}</h2>
+      return <h2 className={`${className} font-bold sm:text-xl`}>{children}</h2>
     case 'p':
       return <p className={className}>{children}</p>
     case 'span':

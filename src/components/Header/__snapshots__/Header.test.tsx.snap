@@ -3,10 +3,10 @@
 exports[`Header should render correctly 1`] = `
 <div>
   <header
-    class="flex h-24 w-full items-center bg-base px-16"
+    class="flex h-24 w-full items-center bg-base px-4 sm:px-16"
   >
     <div
-      class="flex h-full w-6/12 items-center space-x-12"
+      class="flex h-full w-6/12 items-center sm:space-x-12"
     >
       <a
         aria-current="page"
@@ -14,7 +14,7 @@ exports[`Header should render correctly 1`] = `
         href="/"
       >
         <h1
-          class=" text-[#e0def4] font-roboto text-4xl font-bold"
+          class=" text-[#e0def4] font-roboto text-2xl font-bold sm:text-4xl"
         >
           LOGO
         </h1>
@@ -25,28 +25,28 @@ exports[`Header should render correctly 1`] = `
         href="/"
       >
         <h2
-          class="underline cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+          class="underline ml-4 cursor-pointer sm:ml-0 text-[#e0def4] font-roboto font-bold sm:text-xl"
         >
           Discovery
         </h2>
       </a>
     </div>
     <div
-      class="flex h-full w-6/12 items-center justify-end space-x-12"
+      class="flex h-full w-6/12 items-center justify-end space-x-4 sm:space-x-12"
     >
       <a
         class=""
         href="/profile"
       >
         <h2
-          class="false cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+          class="false cursor-pointer text-[#e0def4] font-roboto font-bold sm:text-xl"
         >
           Username
         </h2>
       </a>
       <button>
         <h2
-          class="cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+          class="cursor-pointer text-[#e0def4] font-roboto font-bold sm:text-xl"
         >
           Logout
         </h2>
@@ -59,10 +59,10 @@ exports[`Header should render correctly 1`] = `
 exports[`Header should render correctly the logout button 1`] = `
 <div>
   <header
-    class="flex h-24 w-full items-center bg-base px-16"
+    class="flex h-24 w-full items-center bg-base px-4 sm:px-16"
   >
     <div
-      class="flex h-full w-6/12 items-center space-x-12"
+      class="flex h-full w-6/12 items-center sm:space-x-12"
     >
       <a
         aria-current="page"
@@ -70,7 +70,7 @@ exports[`Header should render correctly the logout button 1`] = `
         href="/"
       >
         <h1
-          class=" text-[#e0def4] font-roboto text-4xl font-bold"
+          class=" text-[#e0def4] font-roboto text-2xl font-bold sm:text-4xl"
         >
           LOGO
         </h1>
@@ -81,28 +81,28 @@ exports[`Header should render correctly the logout button 1`] = `
         href="/"
       >
         <h2
-          class="underline cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+          class="underline ml-4 cursor-pointer sm:ml-0 text-[#e0def4] font-roboto font-bold sm:text-xl"
         >
           Discovery
         </h2>
       </a>
     </div>
     <div
-      class="flex h-full w-6/12 items-center justify-end space-x-12"
+      class="flex h-full w-6/12 items-center justify-end space-x-4 sm:space-x-12"
     >
       <a
         class=""
         href="/profile"
       >
         <h2
-          class="false cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+          class="false cursor-pointer text-[#e0def4] font-roboto font-bold sm:text-xl"
         >
           Username
         </h2>
       </a>
       <button>
         <h2
-          class="cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+          class="cursor-pointer text-[#e0def4] font-roboto font-bold sm:text-xl"
         >
           Logout
         </h2>
@@ -115,10 +115,10 @@ exports[`Header should render correctly the logout button 1`] = `
 exports[`Header should render correctly the nav links 1`] = `
 <div>
   <header
-    class="flex h-24 w-full items-center bg-base px-16"
+    class="flex h-24 w-full items-center bg-base px-4 sm:px-16"
   >
     <div
-      class="flex h-full w-6/12 items-center space-x-12"
+      class="flex h-full w-6/12 items-center sm:space-x-12"
     >
       <a
         aria-current="page"
@@ -126,7 +126,7 @@ exports[`Header should render correctly the nav links 1`] = `
         href="/"
       >
         <h1
-          class=" text-[#e0def4] font-roboto text-4xl font-bold"
+          class=" text-[#e0def4] font-roboto text-2xl font-bold sm:text-4xl"
         >
           LOGO
         </h1>
@@ -137,28 +137,28 @@ exports[`Header should render correctly the nav links 1`] = `
         href="/"
       >
         <h2
-          class="underline cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+          class="underline ml-4 cursor-pointer sm:ml-0 text-[#e0def4] font-roboto font-bold sm:text-xl"
         >
           Discovery
         </h2>
       </a>
     </div>
     <div
-      class="flex h-full w-6/12 items-center justify-end space-x-12"
+      class="flex h-full w-6/12 items-center justify-end space-x-4 sm:space-x-12"
     >
       <a
         class=""
         href="/profile"
       >
         <h2
-          class="false cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+          class="false cursor-pointer text-[#e0def4] font-roboto font-bold sm:text-xl"
         >
           Username
         </h2>
       </a>
       <button>
         <h2
-          class="cursor-pointer text-[#e0def4] font-roboto text-xl font-bold"
+          class="cursor-pointer text-[#e0def4] font-roboto font-bold sm:text-xl"
         >
           Logout
         </h2>

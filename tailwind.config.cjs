@@ -32,6 +32,7 @@ module.exports = {
     },
     extend: {
       width: {
+        88: '22rem',
         112: '28rem',
         120: '30rem',
       },
@@ -42,6 +43,8 @@ module.exports = {
         112: '28rem',
       },
       maxWidth: {
+        56: '14rem',
+        64: '16rem',
         72: '18rem',
         112: '28rem',
       },

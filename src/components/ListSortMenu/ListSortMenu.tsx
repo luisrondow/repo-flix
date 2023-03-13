@@ -9,7 +9,7 @@ const ListSortMenu = ({ activeSortOption, onSortOptionClick }: ListSortMenuProps
   }
 
   return (
-    <div className="absolute z-30 w-64">
+    <div className="absolute right-0 z-30 mr-2 w-64 sm:left-0">
       <li className="list-none bg-white">
         {SORT_OPTIONS.map(({ value, label }) => (
           <ul
