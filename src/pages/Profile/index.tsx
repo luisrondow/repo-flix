@@ -8,6 +8,8 @@ import useLocalStorage from '../../hooks/useLocalStorage'
 import { USER_TOKEN } from '../../utils/constants'
 import { User } from '../../utils/user'
 
+import toast, { Toaster } from 'react-hot-toast'
+
 type Inputs = {
   username: string
   email: string
@@ -50,10 +52,14 @@ const Profile = () => {
     updateUsername(username, email)
       .then(() => {
         setState({ ...state, username, ...(email && { email }) })
-        alert('Username updated successfully')
+        toast.success('Username updated successfully', {
+          position: 'bottom-right',
+        })
       })
       .catch((error) => {
-        console.log(error)
+        toast.error(`Whoops! Something happened: ${error}`, {
+          position: 'bottom-right',
+        })
       })
       .finally(() => {
         setIsSubmitting(false)
@@ -74,6 +80,7 @@ const Profile = () => {
           submitText="Save"
         />
       </div>
+      <Toaster />
     </div>
   )
 }

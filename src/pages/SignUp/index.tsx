@@ -4,6 +4,8 @@ import Form, { FormOption } from '../../components/Form'
 import useFirebase from '../../hooks/useFirebase'
 import { useState } from 'react'
 
+import toast, { Toaster } from 'react-hot-toast'
+
 type Inputs = {
   username: string
   email: string
@@ -48,10 +50,15 @@ const SignUp = () => {
 
     registerWithEmailAndPassword(username, email, password)
       .then(() => {
+        toast.success('Account created!', {
+          position: 'bottom-right',
+        })
         navigate('/login')
       })
       .catch((error) => {
-        console.log(error)
+        toast.error(`Whoops! Something happened: ${error}`, {
+          position: 'bottom-right',
+        })
       })
       .finally(() => {
         setIsSubmitting(false)
@@ -74,6 +81,7 @@ const SignUp = () => {
           </NavLink>
         </Text>
       </div>
+      <Toaster />
     </div>
   )
 }

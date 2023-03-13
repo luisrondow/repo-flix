@@ -16,7 +16,7 @@ export default function useFirebase() {
     try {
       return await signInWithEmailAndPassword(auth, email, password)
     } catch (err) {
-      console.error(err)
+      return Promise.reject(err)
     }
   }
   const registerWithEmailAndPassword = async (
@@ -34,7 +34,7 @@ export default function useFirebase() {
         email,
       })
     } catch (err) {
-      console.error(err)
+      return Promise.reject(err)
     }
   }
 
@@ -51,8 +51,8 @@ export default function useFirebase() {
 
       try {
         await updateDoc(userRef, { username, ...(email && { email }) })
-      } catch (error) {
-        console.error(error)
+      } catch (err) {
+        return Promise.reject(err)
       }
     }
   }
