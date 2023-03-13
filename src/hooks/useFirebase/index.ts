@@ -4,7 +4,16 @@ import {
   createUserWithEmailAndPassword,
   signOut,
 } from 'firebase/auth'
-import { getFirestore, collection, addDoc, getDocs, updateDoc, doc } from 'firebase/firestore'
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  getDocs,
+  updateDoc,
+  doc,
+  query,
+  where,
+} from 'firebase/firestore'
 
 import app from '../../services/firebase'
 
@@ -44,14 +53,21 @@ export default function useFirebase() {
     return user?.data().username
   }
 
-  const updateUsername = async (username: string, email?: string) => {
-    const user = auth.currentUser
-    if (user) {
-      const userRef = doc(db, 'users', user.uid)
+  const updateUsername = async (username: string, email: string) => {
+    const q = query(collection(db, 'users'), where('email', '==', email))
+    const snapshot = await getDocs(q)
 
+    const user = snapshot.docs[0]
+
+    if (user) {
+      console.log(user)
       try {
-        await updateDoc(userRef, { username, ...(email && { email }) })
+        await updateDoc(doc(db, 'users', user.id), {
+          username,
+          ...(email && { email }),
+        })
       } catch (err) {
+        console.error(err)
         return Promise.reject(err)
       }
     }

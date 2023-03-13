@@ -49,7 +49,7 @@ const Profile = () => {
 
     const { username, email } = data
 
-    updateUsername(username, email)
+    updateUsername(username, email && email !== state.email ? email : state.email)
       .then(() => {
         setState({ ...state, username, ...(email && { email }) })
         toast.success('Username updated successfully', {
