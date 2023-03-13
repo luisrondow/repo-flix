@@ -2,8 +2,15 @@ import Header from './Header'
 import { renderWithRouter } from '../../utils/renderWithRouter'
 
 describe('Header', () => {
+  const props = {
+    currentPage: 'home',
+    username: 'Username',
+  }
+
   it('should render correctly', () => {
-    const { container } = renderWithRouter(<Header />)
+    const { container } = renderWithRouter(
+      <Header currentPage={props.currentPage} username={props.username} />,
+    )
 
     expect(container).toHaveTextContent('LOGO')
     expect(container).toHaveTextContent('Discovery')
@@ -14,7 +21,9 @@ describe('Header', () => {
   })
 
   it('should render correctly the nav links', () => {
-    const { container, getByText } = renderWithRouter(<Header />)
+    const { container, getByText } = renderWithRouter(
+      <Header currentPage={props.currentPage} username={props.username} />,
+    )
 
     const logo = getByText('LOGO')
     const discovery = getByText('Discovery')
@@ -33,7 +42,9 @@ describe('Header', () => {
   })
 
   it('should render correctly the logout button', () => {
-    const { container, getByText } = renderWithRouter(<Header />)
+    const { container, getByText } = renderWithRouter(
+      <Header currentPage={props.currentPage} username={props.username} />,
+    )
 
     const logout = getByText('Logout')
 
