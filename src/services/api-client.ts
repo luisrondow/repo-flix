@@ -9,7 +9,9 @@ export default async function client(endpoint: string, customConfig = {}): Promi
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
+      ...(import.meta.env.VITE_API_KEY && {
+        Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
+      }),
     },
     ...customConfig,
   }
