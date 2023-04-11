@@ -2,8 +2,6 @@
 
 ### Made by Luis von Rondow
 
-> This project is a technical test for Sword Health
-
 ## How to run the project
 
 1. Clone the repository
